@@ -4,4 +4,4 @@ RUN apt-get update
 
 RUN apt-get install -y nginx openssl
 
-CMD ["nginx"]
+CMD [ "nginx", "-g", "daemon off;" ]
