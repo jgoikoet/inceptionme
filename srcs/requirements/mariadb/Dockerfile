@@ -1,5 +1,9 @@
 FROM debian:bullseye
 
-RUN apt update
-RUN apt -y install mariadb
+RUN apt-get update
+RUN apt-get -y install mariadb-server
+RUN service mariadb start
 
+CMD ["mysqld"]
+
+ENV MYSQL_ROOT_PASSWORD=pass 
