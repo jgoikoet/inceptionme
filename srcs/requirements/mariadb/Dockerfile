@@ -6,4 +6,4 @@ RUN service mariadb start
 
 CMD ["mysqld"]
 
-ENV MYSQL_ROOT_PASSWORD=pass 
+#ENV MYSQL_ROOT_PASSWORD=pass 
